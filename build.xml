@@ -1,7 +1,7 @@
 <project name="quickstart" basedir="." default="generate.service">
 
     <property environment="env"/>
-    <property name="AXIS2_HOME" value="/home/zhixiong/apps/axis2/"/>
+    <!--<property name="AXIS2_HOME" value="/home/zhixiong/apps/axis2/"/>-->
 
     <property name="build.dir" value="build"/>
 
@@ -19,8 +19,7 @@
         <javac debug="on" 
                fork="true"
                destdir="${build.dir}/classes" 
-               srcdir="${basedir}/src"
-               classpathref="axis2.classpath">
+               srcdir="${basedir}/src">
         </javac>
     </target>
 

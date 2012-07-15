@@ -1,4 +1,10 @@
 package com.pwc.service;
+import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,4 +14,18 @@ package com.pwc.service;
  * To change this template use File | Settings | File Templates.
  */
 public class NoteService {
+    List<Note> notes = new ArrayList<Note>();
+
+    public void addNote(String content) {
+        notes.add(createNote(content));
+    }
+
+    private Note createNote(String content) {
+        return new Note(content);
+    }
+
+     public int getNotesNumber(){
+        return  notes.size();
+     }
+
 }

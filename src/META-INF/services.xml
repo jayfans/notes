@@ -1,4 +1,4 @@
-<service name="VersionService" scope="application">
+<serviceGroup><service name="VersionService" scope="application">
     <description>
         Version POJO Service
     </description>
@@ -14,3 +14,20 @@
         com.pwc.service.VersionService
     </parameter>
 </service>
+    <service name="NoteService" scope="application">
+    <description>
+        Note POJO Service
+    </description>
+    <messageReceivers>
+        <messageReceiver
+                mep="http://www.w3.org/2004/08/wsdl/in-only"
+                class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver"/>
+        <messageReceiver
+                mep="http://www.w3.org/2004/08/wsdl/in-out"
+                class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </messageReceivers>
+    <parameter name="ServiceClass">
+        com.pwc.service.NoteService
+    </parameter>
+</service>
+</serviceGroup>

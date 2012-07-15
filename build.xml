@@ -1,18 +1,11 @@
 <project name="quickstart" basedir="." default="generate.service">
 
     <property environment="env"/>
-    <property name="AXIS2_HOME" value="/home/zhixiong/apps/axis2/"/>
-
     <property name="build.dir" value="build"/>
+    <property name="tomcat.dir" value="/home/zhixiong/apps/tomcat"/>
 
-    <path id="axis2.classpath">
-        <fileset dir="${AXIS2_HOME}/lib">
-            <include name="*.jar"/>
-        </fileset>
-    </path>
 
-    <target name="compile.service">
-	<delete dir="${build.dir}/"/>
+    <target name="compile.service" depends="clean">
         <mkdir dir="${build.dir}"/>
         <mkdir dir="${build.dir}/classes"/>
 
@@ -26,21 +19,6 @@
         </javac>
     </target>
 
-    <target name="generate.wsdl" depends="compile.service">
-        <taskdef name="java2wsdl"
-                 classname="org.apache.ws.java2wsdl.Java2WSDLTask"
-                 classpathref="axis2.classpath"/>
-        <java2wsdl className="samples.quickstart.service.pojo.StockQuoteService"
-                   outputLocation="${build.dir}"
-                   targetNamespace="http://quickstart.samples/"
-                   schemaTargetNamespace="http://quickstart.samples/xsd">
-            <classpath>
-                <pathelement path="${axis2.classpath}"/>
-                <pathelement location="${build.dir}/classes"/>
-            </classpath>
-        </java2wsdl>
-    </target>
-
     <target name="generate.service" depends="compile.service">
         <!--aar them up -->
         <copy toDir="${build.dir}/classes" failonerror="false">
@@ -51,12 +29,14 @@
         <jar destfile="${build.dir}/notes.aar">
             <fileset excludes="**/Test.class" dir="${build.dir}/classes"/>
         </jar>
+
         <copy file="${build.dir}/notes.aar"
               toDir="${basedir}/../../repository/services"
               overwrite="yes">  
         </copy> 
+
         <copy file="${build.dir}/notes.aar"
-		toDir="/Users/zhixiong/Apps/tomcat/webapps/axis2/WEB-INF/services"
+		toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
               overwrite="yes">  
         </copy> 
     </target>

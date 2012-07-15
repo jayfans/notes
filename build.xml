@@ -2,7 +2,7 @@
 
     <property environment="env"/>
     <property name="build.dir" value="build"/>
-    <property name="tomcat.dir" value="/home/zhixiong/apps/tomcat"/>
+    <property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>
 
 
     <target name="compile.service" depends="clean">

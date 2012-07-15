@@ -15,7 +15,7 @@
 	       includeantruntime="on"
                destdir="${build.dir}/classes" 
                srcdir="${basedir}/src"
-	       classpath="./lib/*">
+	       classpath="${bashdir}/lib/*">
         </javac>
     </target>
 

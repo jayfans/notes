@@ -26,4 +26,8 @@ public class Note {
     public String getId() {
         return id;
     }
+
+    public static Note create(String content) {
+         return new Note(content);
+    }
 }

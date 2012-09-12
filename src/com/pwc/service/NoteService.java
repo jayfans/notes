@@ -1,9 +1,7 @@
 package com.pwc.service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,18 +11,23 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public class NoteService {
-    List<Note> notes = new ArrayList<Note>();
+    private INoteWriter noteWriter;
+
+    public NoteService(){
+        noteWriter =new XMLNoteWriter();
+    }
 
     public void addNote(String content) {
-        notes.add(createNote(content));
+        Note note= Note.create(content);
+        noteWriter.write(note);
+        return;
     }
 
-    private Note createNote(String content) {
-        return new Note(content);
+
+    public int getNotesNumber() {
+        return 0;
     }
 
-     public int getNotesNumber(){
-        return  notes.size();
-     }
+
 
 }

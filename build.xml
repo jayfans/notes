@@ -1,47 +1,62 @@
-<project name="quickstart" basedir="." default="generate.service">
+    <project name="notes" basedir="." default="generate.service">
 
-    <property environment="env"/>
-    <property name="build.dir" value="build"/>
-    <property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>
+        <property environment="env"/>
+        <property name="build.dir" value="build"/>
+        <property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>
 
+        <target name="compile" depends="clean">
+            <mkdir dir="${build.dir}"/>
+            <mkdir dir="${build.dir}/classes"/>
 
-    <target name="compile.service" depends="clean">
-        <mkdir dir="${build.dir}"/>
-        <mkdir dir="${build.dir}/classes"/>
+            <!--First let's compile the classes-->
+            <javac debug="on"
+                   fork="true"
+                   includeantruntime="on"
+                   destdir="${build.dir}/classes"
+                   srcdir="${basedir}/src"
+                   classpath="${basedir}/lib/*">
+            </javac>
+        </target>
+        <target name="unittest">
+            <mkdir dir="${build.dir}/test" />
+            <junit printsummary="on" outputtoformatters="xml" filtertrace="no" fork="no" haltonfailure="yes">
+                <classpath>
+                    <pathelement  location="${basedir}/lib/junit.jar"/>
+                    <pathelement location="${build.dir}/classes" />
+                </classpath>
 
-        <!--First let's compile the classes-->
-        <javac debug="on" 
-               fork="true"
-	       includeantruntime="on"
-               destdir="${build.dir}/classes" 
-               srcdir="${basedir}/src"
-	       classpath="${bashdir}/lib/*">
-        </javac>
-    </target>
+                <formatter type="xml" />
+                <batchtest todir="${build.dir}/test">
+                    <fileset dir="${build.dir}/classes">
+                        <include name="**/*Test*.class"/>
+                    </fileset>
+                </batchtest>
+            </junit>
+        </target>
 
-    <target name="generate.service" depends="compile.service">
-        <!--aar them up -->
-        <copy toDir="${build.dir}/classes" failonerror="false">
-            <fileset dir="${basedir}/src">
-                <include name="**/*.xml"/>
-            </fileset>
-        </copy>
-        <jar destfile="${build.dir}/notes.aar">
-            <fileset excludes="**/Test.class" dir="${build.dir}/classes"/>
-        </jar>
+        <target name="generate.service" depends="compile,unittest">
+            <!--aar them up -->
+            <copy toDir="${build.dir}/classes" failonerror="false">
+                <fileset dir="${basedir}/src">
+                    <include name="**/*.xml"/>
+                </fileset>
+            </copy>
+            <jar destfile="${build.dir}/notes.aar">
+                <fileset excludes="**/Test.class" dir="${build.dir}/classes"/>
+            </jar>
 
-        <copy file="${build.dir}/notes.aar"
-              toDir="${basedir}/../../repository/services"
-              overwrite="yes">  
-        </copy> 
+            <copy file="${build.dir}/notes.aar"
+                  toDir="${basedir}/../../repository/services"
+                  overwrite="yes">
+            </copy>
 
-        <copy file="${build.dir}/notes.aar"
-		toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
-              overwrite="yes">  
-        </copy> 
-    </target>
+            <copy file="${build.dir}/notes.aar"
+                  toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
+                  overwrite="yes">
+            </copy>
+        </target>
 
-    <target name="clean">
-        <delete dir="${build.dir}"/>
-    </target>
-</project>
+        <target name="clean">
+            <delete dir="${build.dir}"/>
+        </target>
+    </project>

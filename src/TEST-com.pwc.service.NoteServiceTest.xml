@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="localhost" name="com.pwc.service.NoteServiceTest" tests="2" time="0.082" timestamp="2012-09-09T12:19:48">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/ny/qgtkzz5117b5fr59376sz1mw0000gn/T/" />
+    <property name="env.Apple_Ubiquity_Message" value="/tmp/launch-pOqoyN/Apple_Ubiquity_Message" />
+    <property name="env.PWD" value="/Users/zhixiong/github/notes" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="java.runtime.version" value="1.7.0_05-b05" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-FbmaIO/Render" />
+    <property name="user.name" value="zhixiong" />
+    <property name="env.USER" value="zhixiong" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0:0" />
+    <property name="build.dir" value="build" />
+    <property name="env.PATH" value="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="generate.service" />
+    <property name="ant.project.name" value="notes" />
+    <property name="java.version" value="1.7.0_05" />
+    <property name="user.timezone" value="" />
+    <property name="tomcat.dir" value="/Users/zhixiong/apps/tomcat" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="zhixiong" />
+    <property name="ant.file" value="/Users/zhixiong/github/notes/build.xml" />
+    <property name="os.version" value="10.8.1" />
+    <property name="env.TERM_PROGRAM_VERSION" value="309" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="23.1-b03" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="ant.file.type.notes" value="file" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.file.notes" value="/Users/zhixiong/github/notes/build.xml" />
+    <property name="user.home" value="/Users/zhixiong" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="java.library.path" value="/Users/zhixiong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.pwc.service.NoteServiceTest filtertrace=false haltOnError=false haltOnFailure=true showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/zhixiong/github/notes/src/TEST-com.pwc.service.NoteServiceTest.xml crashfile=/Users/zhixiong/github/notes/junitvmwatcher3526580743157101241.properties propsfile=/Users/zhixiong/github/notes/junit1480917075238357267.properties" />
+    <property name="java.class.path" value="/Users/zhixiong/github/notes/lib/junit.jar:/Users/zhixiong/github/notes/build/classes:/usr/share/java/ant-1.8.2/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on June 20 2012" />
+    <property name="env.TERM_SESSION_ID" value="5423F96D-B272-4110-A709-F6B1734129A9" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/Users/zhixiong" />
+    <property name="java.io.tmpdir" value="/var/folders/ny/qgtkzz5117b5fr59376sz1mw0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-hrj3GQ/Listeners" />
+    <property name="env.COMMAND_MODE" value="unix2003" />
+    <property name="env.JAVA_MAIN_CLASS_2063" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.ext.dirs" value="/Users/zhixiong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/zhixiong/github/notes" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/zhixiong/github/notes" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="generate.service" />
+  </properties>
+  <testcase classname="com.pwc.service.NoteServiceTest" name="testGetNotesNumber" time="0.002" />
+  <testcase classname="com.pwc.service.NoteServiceTest" name="testAddNote" time="0.016" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

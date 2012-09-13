@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e70625-a5dc-49c6-a004-bb1933d66db1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jedis-2.1.0.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.iml" afterPath="$PROJECT_DIR$/notes.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java" afterPath="$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java" />
     </list>
     <ignored path="notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,18 +112,7 @@
       <file leaf-file-name="NoteServiceTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="8" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Before.class" pinned="false" current="true" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/Before.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="302" selection-end="302" vertical-scroll-proportion="0.19396552">
+            <state line="28" column="21" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +121,25 @@
       <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="75" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0">
+            <state line="57" column="43" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="587" column="52" selection-start="27040" selection-end="27040" vertical-scroll-proportion="-6.247899">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="44" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/service.xml.tld" />
-        <option value="$PROJECT_DIR$/src/notes/pojo/data/VersionService.java" />
         <option value="$PROJECT_DIR$/src/notes/pojo/services/Version.java" />
         <option value="$PROJECT_DIR$/src/com/pojo/data/Version.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/data/Version.java" />
@@ -164,8 +170,10 @@
         <option value="$PROJECT_DIR$/src/com/pwc/service/Note.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/NoteService.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java" />
+        <option value="$PROJECT_DIR$/notes.iml" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -224,6 +232,21 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,46 +279,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,12 +300,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -411,6 +400,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -437,24 +444,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -501,6 +490,21 @@
       </option>
       <envs />
       <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -575,21 +579,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <data>
-          <option name="transportHostId" />
-        </data>
-      </server-settings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -653,9 +642,9 @@
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.NoteServiceTest.testAddNote" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NoteServiceTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.NoteServiceTest.testAddNote" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.NoteServiceTest" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -761,60 +750,58 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java">
+    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/Before.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/INoteWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="31" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/NoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="15" selection-start="292" selection-end="301" vertical-scroll-proportion="0.19396552" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+        <state line="14" column="4" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/NoteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="31" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/INoteWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="21" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="44" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0">
+        <state line="57" column="43" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/Before.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="302" selection-end="302" vertical-scroll-proportion="0.19396552">
+        <state line="587" column="52" selection-start="27040" selection-end="27040" vertical-scroll-proportion="-6.247899">
           <folding />
         </state>
       </provider>

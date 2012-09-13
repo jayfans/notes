@@ -17,6 +17,7 @@
                    classpath="${basedir}/lib/*">
             </javac>
         </target>
+
         <target name="unittest">
             <mkdir dir="${build.dir}/test" />
             <junit printsummary="on" outputtoformatters="xml" filtertrace="no" fork="no" haltonfailure="yes">

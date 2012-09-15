@@ -13,21 +13,20 @@ import java.util.List;
 public class NoteService {
     private INoteWriter noteWriter;
 
-    public NoteService(){
-        noteWriter =new XMLNoteWriter();
+    public NoteService() {
+        noteWriter = new XMLNoteWriter();
     }
 
     public void addNote(String content) {
-        Note note= Note.create(content);
+        Note note = Note.create(content);
         noteWriter.write(note);
         return;
     }
 
 
     public int getNotesNumber() {
-        return 0;
+        return noteWriter.getNoteNumber();
     }
-
 
 
 }

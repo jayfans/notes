@@ -14,7 +14,7 @@
                    includeantruntime="on"
                    destdir="${build.dir}/classes"
                    srcdir="${basedir}/src"
-                   classpath="${basedir}/lib/*">
+                   classpath="${basedir}/lib/junit.jar">
             </javac>
         </target>
 

@@ -10,4 +10,5 @@ package com.pwc.service;
 public interface INoteWriter {
     void write(Note note);
     int getNoteNumber();
+    String[] getNotes(int number);
 }

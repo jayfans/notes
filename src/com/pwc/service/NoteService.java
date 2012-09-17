@@ -28,5 +28,9 @@ public class NoteService {
         return noteWriter.getNoteNumber();
     }
 
+    public String[] getLatest(int number){
+        return noteWriter.getNotes(number);
+    }
+
 
 }

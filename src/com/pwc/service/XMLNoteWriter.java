@@ -9,14 +9,15 @@ package com.pwc.service;
  */
 public class XMLNoteWriter implements INoteWriter {
 
-    private  final static String defaultFilePath = "notes.txt";
+    private final static String defaultFilePath = "notes.txt";
     private String filePath;
 
-    public  XMLNoteWriter(String filePath) {
-            this.filePath=filePath;
+    public XMLNoteWriter(String filePath) {
+        this.filePath = filePath;
     }
-    public XMLNoteWriter(){
-           this.filePath = defaultFilePath;
+
+    public XMLNoteWriter() {
+        this.filePath = defaultFilePath;
     }
 
     @Override
@@ -27,6 +28,12 @@ public class XMLNoteWriter implements INoteWriter {
     @Override
     public int getNoteNumber() {
         return FileExt.getLineNumber(this.filePath);
+    }
+
+    @Override
+    public String[] getNotes(int number) {
+        int total = FileExt.getLineNumber(filePath);
+        return FileExt.getLines(filePath, total - number, total - 1);
     }
 
 }

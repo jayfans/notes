@@ -1,4 +1,4 @@
-    <project name="notes" basedir="." default="generate.service">
+    <project name="notes" basedir="." default="publish">
 
         <property environment="env"/>
         <property name="build.dir" value="build"/>
@@ -59,7 +59,27 @@
             </copy>
         </target>
 
+        <target name="publish" depends="generate.service">
+            <antcall target="stop">
+            </antcall>
+            <antcall target="start">
+            </antcall>
+        </target>
+
+        <target name="start" description="tomcat starting.....">
+            <exec dir="${tomcat.dir}/bin" executable="./startup.sh" >
+            </exec>
+        </target>
+
+        <target name="stop" description="tomcat stopping.....">
+            <exec dir="${tomcat.dir}/bin" executable="./shutdown.sh" >
+            </exec>
+        </target>
+
         <target name="clean">
             <delete dir="${build.dir}"/>
         </target>
+
+
+
     </project>

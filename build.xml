@@ -65,11 +65,11 @@
         </target>
 
         <target name="tomcat.restart" description="tomcat starting.....">
-            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
+            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" failonerror="false"  >
                 <arg value="stop"></arg>
             </exec>
 
-            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
+            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" failonerror="false">
                 <arg value="start"></arg>
             </exec>
         </target>

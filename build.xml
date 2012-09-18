@@ -77,7 +77,7 @@
 
         <target name="tomcat.stop" description="tomcat stopping.....">
             <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
-                <arg value="stop"></arg>
+                <arg value="stop 3"></arg>
             </exec>
         </target>
 

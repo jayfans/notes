@@ -60,14 +60,17 @@
         </target>
 
         <target name="publish" depends="generate.service">
-            <antcall target="stop">
-            </antcall>
-            <antcall target="start">
+            <antcall target="tomcat.restart">
             </antcall>
         </target>
 
-        <target name="start" description="tomcat starting.....">
-            <exec dir="${tomcat.dir}/bin" executable="./startup.sh" >
+        <target name="tomcat.restart" description="tomcat starting.....">
+            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
+                <arg value="stop"></arg>
+            </exec>
+
+            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
+                <arg value="start"></arg>
             </exec>
         </target>
 

@@ -58,16 +58,15 @@
               toDir="${basedir}/../../repository/services"
               overwrite="yes">
         </copy>
-
-        <copy file="${build.dir}/notes.aar"
-              toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
-              overwrite="yes">
-        </copy>
     </target>
 
     <target name="publish" depends="generate.service">
-        <antcall target="tomcat.restart">
-        </antcall>
+        <!--<antcall target="tomcat.restart"></antcall>-->
+        <delete file="${tomcat.dir}/webapps/axis2/WEB-INF/services/notes.aar"/>
+        <copy file="${build.dir}/notes.aar"
+              toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
+              overwrite="no">
+        </copy>
     </target>
 
     <target name="tomcat.restart" description="tomcat starting.....">

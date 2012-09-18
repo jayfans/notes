@@ -33,7 +33,7 @@ public class NoteService {
     }
 
     public String getVersion(){
-        return "1.0";
+        return "3.0";
     }
 
 

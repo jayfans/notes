@@ -33,7 +33,10 @@ public class XMLNoteWriter implements INoteWriter {
     @Override
     public String[] getNotes(int number) {
         int total = FileExt.getLineNumber(filePath);
-        return FileExt.getLines(filePath, total - number, total - 1);
+        if (number > total)
+            return FileExt.getLines(filePath, 0, total - 1);
+        else
+            return FileExt.getLines(filePath, total - number, total - 1);
     }
 
 }

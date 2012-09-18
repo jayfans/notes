@@ -87,8 +87,7 @@
 
     <target name="tomcat.start" description="tomcat starting">
         <echo message="starting tomcat"></echo>
-        <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" failonerror="true">
-            <arg value="start"></arg>
+        <exec dir="${tomcat.dir}/bin" executable="./startup.sh" failonerror="true">
         </exec>
     </target>
 

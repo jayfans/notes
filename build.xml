@@ -3,8 +3,8 @@
     <property environment="env"/>
     <property name="build.dir" value="build"/>
 
-    <!--<property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>-->
-    <property name="tomcat.dir" value="/Users/zhixiong/apps/tomcat"/>
+    <property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>
+    <!--<property name="tomcat.dir" value="/Users/zhixiong/apps/tomcat"/>-->
 
     <taskdef resource="net/sf/antcontrib/antcontrib.properties">
         <classpath>

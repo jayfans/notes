@@ -1,91 +1,108 @@
-    <project name="notes" basedir="." default="publish">
+<project name="notes" basedir="." default="publish">
 
-        <property environment="env"/>
-        <property name="build.dir" value="build"/>
+    <property environment="env"/>
+    <property name="build.dir" value="build"/>
 
-        <property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>
-        <!--<property name="tomcat.dir" value="/Users/zhixiong/apps/tomcat"/>-->
+    <!--<property name="tomcat.dir" value="/home/ubuntu/apps/tomcat"/>-->
+    <property name="tomcat.dir" value="/Users/zhixiong/apps/tomcat"/>
 
-        <target name="compile" depends="clean">
-            <mkdir dir="${build.dir}"/>
-            <mkdir dir="${build.dir}/classes"/>
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="${basedir}/lib/ant-contrib-0.6.jar"/>
+        </classpath>
+    </taskdef>
 
-            <!--First let's compile the classes-->
-            <javac debug="on"
-                   fork="true"
-                   includeantruntime="on"
-                   destdir="${build.dir}/classes"
-                   srcdir="${basedir}/src"
-                   classpath="${basedir}/lib/junit.jar">
-            </javac>
-        </target>
+    <target name="compile" depends="clean">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.dir}/classes"/>
 
-        <target name="unittest">
-            <mkdir dir="${build.dir}/test" />
-            <junit printsummary="on" outputtoformatters="xml" filtertrace="no" fork="no" haltonfailure="yes">
-                <classpath>
-                    <pathelement  location="${basedir}/lib/junit.jar"/>
-                    <pathelement location="${build.dir}/classes" />
-                </classpath>
+        <!--First let's compile the classes-->
+        <javac debug="on"
+               fork="true"
+               includeantruntime="on"
+               destdir="${build.dir}/classes"
+               srcdir="${basedir}/src"
+               classpath="${basedir}/lib/junit.jar">
+        </javac>
+    </target>
 
-                <formatter type="xml" />
-                <batchtest todir="${build.dir}/test">
-                    <fileset dir="${build.dir}/classes">
-                        <include name="**/*Test*.class"/>
-                    </fileset>
-                </batchtest>
-            </junit>
-        </target>
+    <target name="unittest">
+        <mkdir dir="${build.dir}/test"/>
+        <junit printsummary="on" outputtoformatters="xml" filtertrace="no" fork="no" haltonfailure="yes">
+            <classpath>
+                <pathelement location="${basedir}/lib/junit.jar"/>
+                <pathelement location="${build.dir}/classes"/>
+            </classpath>
 
-        <target name="generate.service" depends="compile,unittest">
-            <!--aar them up -->
-            <copy toDir="${build.dir}/classes" failonerror="false">
-                <fileset dir="${basedir}/src">
-                    <include name="**/*.xml"/>
+            <formatter type="xml"/>
+            <batchtest todir="${build.dir}/test">
+                <fileset dir="${build.dir}/classes">
+                    <include name="**/*Test*.class"/>
                 </fileset>
-            </copy>
-            <jar destfile="${build.dir}/notes.aar">
-                <fileset excludes="**/Test.class" dir="${build.dir}/classes"/>
-            </jar>
+            </batchtest>
+        </junit>
+    </target>
 
-            <copy file="${build.dir}/notes.aar"
-                  toDir="${basedir}/../../repository/services"
-                  overwrite="yes">
-            </copy>
+    <target name="generate.service" depends="compile,unittest">
+        <!--aar them up -->
+        <copy toDir="${build.dir}/classes" failonerror="false">
+            <fileset dir="${basedir}/src">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+        <jar destfile="${build.dir}/notes.aar">
+            <fileset excludes="**/Test.class" dir="${build.dir}/classes"/>
+        </jar>
 
-            <copy file="${build.dir}/notes.aar"
-                  toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
-                  overwrite="yes">
-            </copy>
-        </target>
+        <copy file="${build.dir}/notes.aar"
+              toDir="${basedir}/../../repository/services"
+              overwrite="yes">
+        </copy>
 
-        <target name="publish" depends="generate.service">
-            <antcall target="tomcat.restart">
-            </antcall>
-        </target>
+        <copy file="${build.dir}/notes.aar"
+              toDir="${tomcat.dir}/webapps/axis2/WEB-INF/services"
+              overwrite="yes">
+        </copy>
+    </target>
 
-        <target name="tomcat.restart" description="tomcat starting.....">
-            <antcall target="tomcat.stop"></antcall>
-            <antcall target="tomcat.start"></antcall>
-        </target>
+    <target name="publish" depends="generate.service">
+        <antcall target="tomcat.restart">
+        </antcall>
+    </target>
 
-        <target name="tomcat.start" description="tomcat starting">
+    <target name="tomcat.restart" description="tomcat starting.....">
+        <trycatch>
+            <try>
+                <antcall target="tomcat.stop"></antcall>
+            </try>
+            <catch>
+                <echo message="stop tomcat failed"></echo>
+            </catch>
+            <finally>
+                <antcall target="tomcat.start"></antcall>
+            </finally>
+        </trycatch>
+
+    </target>
+
+    <target name="tomcat.start" description="tomcat starting">
+        <echo message="starting tomcat"></echo>
         <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" failonerror="true">
             <arg value="start"></arg>
         </exec>
-        </target>
+    </target>
 
-        <target name="tomcat.stop" description="tomcat stopping.....">
-            <exec dir="${tomcat.dir}/bin" executable="./catalina.sh" >
-                <arg value="stop"></arg>
-                <arg value="3"></arg>
-            </exec>
-        </target>
+    <target name="tomcat.stop" description="tomcat stopping.....">
+        <echo message="stopping tomcat"></echo>
+        <exec dir="${tomcat.dir}/bin" executable="./catalina.sh">
+            <arg value="stop"></arg>
+            <arg value="3"></arg>
+        </exec>
+    </target>
 
-        <target name="clean">
-            <delete dir="${build.dir}"/>
-        </target>
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
 
 
-
-    </project>
+</project>

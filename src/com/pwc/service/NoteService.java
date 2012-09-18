@@ -32,5 +32,9 @@ public class NoteService {
         return noteWriter.getNotes(number);
     }
 
+    public String getVersion(){
+        return "1.0";
+    }
+
 
 }

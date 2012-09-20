@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e70625-a5dc-49c6-a004-bb1933d66db1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/activation.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-email-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/mail.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/activation.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_email_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/pwc/service/MailExt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/pwc/service/MailExtTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes.iml" afterPath="$PROJECT_DIR$/notes.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/pwc/service/FileExt.java" afterPath="$PROJECT_DIR$/src/com/pwc/service/FileExt.java" />
     </list>
     <ignored path="notes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +46,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/pwc/service/FileExtTest.java" line="36" class="com.pwc.service.FileExtTest" package="com.pwc.service">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/pwc/service/FileExt.java" line="100" class="com.pwc.service.FileExt" package="com.pwc.service">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -105,14 +102,63 @@
       <file leaf-file-name="FileExt.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwc/service/FileExt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="65" selection-start="5302" selection-end="5302" vertical-scroll-proportion="0.0">
+            <state line="99" column="0" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="docComment;class#FileExt#0" expanded="false" />
                 <element signature="method#readLastLine#0;class#FileExt#0" expanded="false" />
                 <element signature="method#getLineNumber#0;class#FileExt#0" expanded="false" />
                 <element signature="method#appendLine#0;class#FileExt#0" expanded="false" />
-                <element signature="method#getLines#0;class#FileExt#0" expanded="false" />
-                <element signature="method#copy#0;class#FileExt#0" expanded="false" />
                 <element signature="method#delete#0;class#FileExt#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailExt.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/pwc/service/MailExt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="32" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1029#1046#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailAttachment.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/EmailAttachment.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="75" selection-start="1274" selection-end="1282" vertical-scroll-proportion="-19.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleEmail.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/SimpleEmail.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="11" selection-start="229" selection-end="229" vertical-scroll-proportion="-3.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailExtTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/pwc/service/MailExtTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/FileWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="49" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="docComment;method#FileWriter#3;class#FileWriter#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -121,27 +167,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="35" selection-start="3355" selection-end="3355" vertical-scroll-proportion="0.5398773">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileExtTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pwc/service/FileExtTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="47" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-6.0">
+            <state line="39" column="75" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.67483294">
               <folding />
             </state>
           </provider>
@@ -156,42 +182,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="19" selection-start="3673" selection-end="3673" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="XMLNoteWriter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="17" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="docComment;class#XMLNoteWriter#0" expanded="false" />
+                <element signature="method#XMLNoteWriter#1;class#XMLNoteWriter#0" expanded="false" />
                 <element signature="method#write#0;class#XMLNoteWriter#0" expanded="false" />
+                <element signature="method#getNoteNumber#0;class#XMLNoteWriter#0" expanded="false" />
                 <element signature="method#getNotes#0;class#XMLNoteWriter#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="INoteWriter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pwc/service/INoteWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="471" column="16" selection-start="19756" selection-end="19756" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -209,8 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/pwc/services/Version.java" />
-        <option value="$PROJECT_DIR$/src/com/pwc/services/VersionService.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/Db.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/VersionService.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/NoteWriter.java" />
@@ -219,11 +218,13 @@
         <option value="$PROJECT_DIR$/src/com/pwc/service/NoteServiceTest.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriterTest.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/pwc/service/FileExt.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/FileExtTest.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/INoteWriter.java" />
-        <option value="$PROJECT_DIR$/src/com/pwc/service/NoteService.java" />
         <option value="$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java" />
+        <option value="$PROJECT_DIR$/src/com/pwc/service/NoteService.java" />
+        <option value="$PROJECT_DIR$/src/com/pwc/service/FileExt.java" />
+        <option value="$PROJECT_DIR$/src/com/pwc/service/MailExtTest.java" />
+        <option value="$PROJECT_DIR$/src/com/pwc/service/MailExt.java" />
         <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
@@ -339,24 +340,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="notes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -403,97 +386,7 @@
       <recent name="com.pwc.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileExtTest">
-    <configuration default="false" name="NoteServiceTest.testAddNote" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.pwc.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="notes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.pwc.service" />
-      <option name="MAIN_CLASS_NAME" value="com.pwc.service.NoteServiceTest" />
-      <option name="METHOD_NAME" value="testAddNote" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.pwc.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="notes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.pwc.service" />
-      <option name="MAIN_CLASS_NAME" value="com.pwc.service.NoteServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FileExtTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.pwc.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="notes" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.pwc.service" />
-      <option name="MAIN_CLASS_NAME" value="com.pwc.service.FileExtTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MailExtTest">
     <configuration default="false" name="XMLNoteWriterTest.testWrite" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -553,6 +446,96 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MailExtTest.testSendMultiMessage" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pwc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="notes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pwc.service" />
+      <option name="MAIN_CLASS_NAME" value="com.pwc.service.MailExtTest" />
+      <option name="METHOD_NAME" value="testSendMultiMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MailExtTest.testSendSimpleMessage" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pwc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="notes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pwc.service" />
+      <option name="MAIN_CLASS_NAME" value="com.pwc.service.MailExtTest" />
+      <option name="METHOD_NAME" value="testSendSimpleMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MailExtTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.pwc.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="notes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.pwc.service" />
+      <option name="MAIN_CLASS_NAME" value="com.pwc.service.MailExtTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -822,11 +805,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.NoteServiceTest.testAddNote" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.NoteServiceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FileExtTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.XMLNoteWriterTest.testWrite" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FileExtTest.getLinesTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.XMLNoteWriterTest.testWrite" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FileExtTest.getLinesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MailExtTest.testSendMultiMessage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MailExtTest.testSendSimpleMessage" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MailExtTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -868,9 +851,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32833958" sideWeight="0.48852223" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1835206" sideWeight="0.48852223" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.670418" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35330835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53682894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1360799" sideWeight="0.5265423" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -882,8 +865,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105451934" sideWeight="0.6716604" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35580525" sideWeight="0.49137932" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18436155" sideWeight="0.6217228" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37827715" sideWeight="0.49137932" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -984,66 +967,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriterTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="16" selection-start="19756" selection-end="19756" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="25" selection-start="2461" selection-end="2461" vertical-scroll-proportion="-5.24">
-          <folding>
-            <element signature="e#0#3733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.5823096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/statements/RunAfters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="615" selection-end="615" vertical-scroll-proportion="0.41878173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding>
-            <element signature="e#0#4931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="511" selection-end="511" vertical-scroll-proportion="0.21441442">
-          <folding>
-            <element signature="e#0#1777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="619" selection-end="619" vertical-scroll-proportion="0.2972973">
+        <state line="109" column="19" selection-start="3673" selection-end="3673" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1064,41 +990,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/INoteWriter.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+        <state line="156" column="0" selection-start="3769" selection-end="3769" vertical-scroll-proportion="0.3570248">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/templateFile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="19" selection-start="3673" selection-end="3673" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="5" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java">
+    <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/MultiPartEmail.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="docComment;class#XMLNoteWriter#0" expanded="false" />
-            <element signature="method#write#0;class#XMLNoteWriter#0" expanded="false" />
-            <element signature="method#getNotes#0;class#XMLNoteWriter#0" expanded="false" />
-          </folding>
+        <state line="5" column="13" selection-start="161" selection-end="175" vertical-scroll-proportion="0.1171875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/Email.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="3" selection-start="5631" selection-end="5631" vertical-scroll-proportion="0.4456929">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pwc/service/FileExt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="65" selection-start="5302" selection-end="5302" vertical-scroll-proportion="0.0">
+        <state line="99" column="0" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="docComment;class#FileExt#0" expanded="false" />
             <element signature="method#readLastLine#0;class#FileExt#0" expanded="false" />
             <element signature="method#getLineNumber#0;class#FileExt#0" expanded="false" />
             <element signature="method#appendLine#0;class#FileExt#0" expanded="false" />
-            <element signature="method#getLines#0;class#FileExt#0" expanded="false" />
-            <element signature="method#copy#0;class#FileExt#0" expanded="false" />
             <element signature="method#delete#0;class#FileExt#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/XMLNoteWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="docComment;class#XMLNoteWriter#0" expanded="false" />
+            <element signature="method#XMLNoteWriter#1;class#XMLNoteWriter#0" expanded="false" />
+            <element signature="method#write#0;class#XMLNoteWriter#0" expanded="false" />
+            <element signature="method#getNoteNumber#0;class#XMLNoteWriter#0" expanded="false" />
+            <element signature="method#getNotes#0;class#XMLNoteWriter#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1110,9 +1051,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/SimpleEmail.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="229" selection-end="229" vertical-scroll-proportion="-3.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/commons-email-1.2.jar!/org/apache/commons/mail/EmailAttachment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="75" selection-start="1274" selection-end="1282" vertical-scroll-proportion="-19.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/MailExtTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pwc/service/MailExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="32" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1029#1046#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/src.zip!/java/io/FileWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="49" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="docComment;method#FileWriter#3;class#FileWriter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="35" selection-start="3355" selection-end="3355" vertical-scroll-proportion="0.5398773">
+        <state line="39" column="75" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.67483294">
           <folding />
         </state>
       </provider>

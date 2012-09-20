@@ -22,7 +22,11 @@
                includeantruntime="on"
                destdir="${build.dir}/classes"
                srcdir="${basedir}/src"
-               classpath="${basedir}/lib/junit.jar">
+               classpath="${basedir}/lib/junit.jar;
+               ${basedir}/lib/commons-email-1.2.jar;
+               ${basedir}/lib/activation.jar;
+               ${basedir}/lib/mail.jar;
+               ">
         </javac>
     </target>
 
@@ -31,6 +35,9 @@
         <junit printsummary="on" outputtoformatters="xml" filtertrace="no" fork="no" haltonfailure="yes">
             <classpath>
                 <pathelement location="${basedir}/lib/junit.jar"/>
+                <pathelement location="${basedir}/lib/mail.jar"/>
+                <pathelement location="${basedir}/lib/activation.jar"/>
+                <pathelement location="${basedir}/lib/commons-email-1.2.jar"/>
                 <pathelement location="${build.dir}/classes"/>
             </classpath>
 

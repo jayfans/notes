@@ -96,6 +96,10 @@ public class FileExt {
         }
     }
 
+    static String[] getLines(String filePath, int from) {
+        return getLines(filePath, from, FileExt.getLineNumber(filePath) - 1);
+    }
+
     static String[] getLines(String filePath, int from, int to) {
 
         if (from < 0 || to > FileExt.getLineNumber(filePath)) {
@@ -173,3 +177,5 @@ public class FileExt {
         }
     }
 }
+
+

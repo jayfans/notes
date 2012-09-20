@@ -24,6 +24,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Apache Axis-Apache Axis" level="project" />
     <orderEntry type="library" name="junit" level="project" />
+    <orderEntry type="library" name="commons-email-1.2" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
   </component>
 </module>
 

@@ -1,5 +1,7 @@
 package com.pwc.service;
 
+import org.apache.commons.mail.EmailException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,13 +30,20 @@ public class NoteService {
         return noteWriter.getNoteNumber();
     }
 
-    public String[] getLatest(int number){
+    public String[] getLatest(int number) {
         return noteWriter.getNotes(number);
     }
 
-    public String getVersion(){
+    public String getVersion() {
         return "3.0";
     }
 
-
+    public void sendNotes(int top) throws EmailException {
+        String[] notes = getLatest(top);
+        StringBuilder content = new StringBuilder();
+        for (String note : notes) {
+            content.append(content);
+        }
+        MailExt.sendSimpleMessage(content.toString());
+    }
 }

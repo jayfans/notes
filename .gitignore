@@ -2,3 +2,7 @@
 build/
 out/
 testnotes.txt
+build.xml~
+.DS_Store
+contactbook.txt~
+lib/README.txt
